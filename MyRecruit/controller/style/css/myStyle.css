@@ -1,0 +1,16 @@
+.icon{
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	margin-bottom:15px;
+	line-height:60px;
+	text-decoration:none;
+	background:#00C4CC;
+	display:block;
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+	}
+.input{
+	width:250px;
+}

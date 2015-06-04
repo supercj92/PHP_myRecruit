@@ -1,0 +1,44 @@
+<?php /* Smarty version 2.6.18, created on 2015-05-09 18:44:48
+         compiled from adminFrameDown.html */ ?>
+ <!-------------------------我是下半部分----------------->		</div><!--/.row-->
+		</div>
+		<!--/.row-->
+								
+		<div class="row">
+			<div class="col-md-8">
+			
+			</div><!--/.col-->
+			
+		</div><!--/.row-->
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+	    $('#calendar').datepicker({
+	});
+
+	!function ($) {
+	    $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+	        $(this).find('em:first').toggleClass("glyphicon-minus");
+	    });
+	    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+	} (window.jQuery);
+
+	$(window).on('resize', function () {
+	    if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+	})
+	$(window).on('resize', function () {
+	    if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+	})
+	</script>	
+       
+    </div>
+   
+</body>
+</html>

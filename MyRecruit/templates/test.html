@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+<body>
+
+
+<h2>取普通变量</h2>
+<hr>
+<{$aa}>
+<h2>取一维索引数组</h2>
+<hr>
+<{$arr[0]}>||<{$arr[1]}>||<{$arr[2]}>
+<h2>取一维关联数组</h2>
+<hr>
+<{$arr1.city1}>||<{$arr1.city2}>
+
+<h2>取二维索引数组</h2>
+<hr>
+<{$arr2[0][0]}>||<{$arr2[1][1]}>
+<{*我是注释*}>
+<h2>取出二维关联数组</h2>
+<hr>
+<{$arr3[0].email}>||<{$arr3[1].email}></br>
+<{* array('emp1'=>array('id'=>'001','email'=>'sfd@2656.com')) *}>
+<{$arr4.emp1.email}>
+<h2>foreach的使用</h2>
+<hr>
+<{*取出一维索引数组*}>
+取出一维索引数组:
+<{foreach from=$arr key=tkey item=temp}>
+<{$tkey}>=><{$temp}>
+<{/foreach}></br>
+<{* 取出一维关联数组*}>
+取出一维关联数组:
+<{foreach from=$arr1 key=tkey item=temp}>
+<{$tkey}>=><{$temp}>
+<{/foreach}></br>
+<{*取出二维关联数组*}>
+取出二维关联数组:</br>
+<{foreach from=$arr3 key=tkey item=temp}>
+<{$tkey}>------->
+	<{foreach from=$temp key=ikey item=itemp}>
+		<{$ikey}>=><{$itemp}>
+	<{/foreach}>
+	</br>
+<{/foreach}>
+<h2>接受对象</h2>
+<hr>
+<{$dog1->name}>
+
+
+</body>
+</html>
